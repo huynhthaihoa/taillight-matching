@@ -1,6 +1,6 @@
 # Taillight Matching and Pairing Algorithm
 
-Source code for the paper ["Taillight Matching and Pairing Algorithm for Stereo-Vision-based Nighttime Vehicle-to-Vehicle Positioning"](https://www.mdpi.com/2076-3417/10/19/6800/htm).
+Source code for the paper ["A Taillight Matching and Pairing Algorithm for Stereo-Vision-Based Nighttime Vehicle-to-Vehicle Positioning"](https://www.mdpi.com/2076-3417/10/19/6800/htm).
 
 ## Overview
 
@@ -169,4 +169,4 @@ class FD(Enum):
 - Ground truth data (stereo matches and taillight pairs) are hardcoded in `utils.py` as dictionaries (`stereo_matching_left`, `stereo_matching_right`, `taillight_pairing_left`, `taillight_pairing_right`)
 - Bus vehicles are filtered separately via `bus_map_left` and `bus_map_right` in `utils.py`
 - The code is currently Windows-path dependent (backslashes); cross-platform support can be added by replacing path strings with `os.path.join()`
-- Feature descriptors (SIFT/SURF/ORB computation) are optional and disabled by default in dataset generation (set to 0)
+- Feature descriptors (**SIFT**/**SURF**/**ORB** computation) are optional and disabled by default in dataset generation (set to 0)
